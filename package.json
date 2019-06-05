@@ -3,11 +3,12 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
+    "start": "concurrently \"ng serve\" \"npm run start-backend\"",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "start-backend":"json-server --watch db.json --port 4100"
   },
   "private": true,
   "dependencies": {
