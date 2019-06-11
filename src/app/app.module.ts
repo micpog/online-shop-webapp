@@ -8,6 +8,14 @@ import { UserComponent } from './navigation-bar/user/user.component';
 import { ShoppingCartComponent } from './navigation-bar/shopping-cart/shopping-cart.component';
 import { ProductsCarouselComponent } from './products-carousel/products-carousel.component';
 import { ProductComponent } from './products-carousel/product/product.component';
+import { MatCardModule } from '@angular/material/card';
+import { HttpClientModule } from '@angular/common/http';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { ReactiveFormsModule } from '@angular/forms';
+import { MatTabsModule } from '@angular/material/tabs';
+import { MatButtonModule, MatCheckboxModule, MatInputModule } from '@angular/material';
+import { MatMenuModule } from '@angular/material/menu';
+import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
 
 @NgModule({
   declarations: [
@@ -20,7 +28,18 @@ import { ProductComponent } from './products-carousel/product/product.component'
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    MatCardModule,
+    MatButtonModule,
+    MatCheckboxModule,
+    MatMenuModule,
+    MatCardModule,
+    HttpClientModule,
+    MatFormFieldModule,
+    MatInputModule,
+    ReactiveFormsModule,
+    MatTabsModule,
+    MatProgressSpinnerModule
   ],
   providers: [],
   bootstrap: [AppComponent]

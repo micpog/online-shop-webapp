@@ -7,7 +7,10 @@ import { Product } from 'src/app/models/product.model';
   styleUrls: ['./product.component.scss']
 })
 export class ProductComponent implements OnInit {
-  @Input() product: Product;
+  @Input() name: string;
+  @Input() category: string;
+  @Input() description: string;
+  @Input() imageURL: string;
   constructor() { }
 
   ngOnInit() {
