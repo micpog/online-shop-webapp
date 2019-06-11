@@ -1,3 +1,10 @@
-<div class="container">
-  <p [ngStyle]="{'background-color': getColor()}">Losowy produkt {{productNumber}}</p>
-</div>
+<mat-card class="product">
+  <mat-card-header class="product-header">
+    <mat-card-title><span>{{name}}</span></mat-card-title>
+    <mat-card-subtitle>{{category}}</mat-card-subtitle>
+  </mat-card-header>
+  <img class="product-image" mat-card-image src={{imageURL}} alt="Photo of a Shiba Inu">
+  <mat-card-content class="product-description">
+    {{description}}
+  </mat-card-content>
+</mat-card>
